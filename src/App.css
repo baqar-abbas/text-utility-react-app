@@ -5,3 +5,11 @@
 body {
   margin: 0;
 }
+
+.form-control::placeholder {
+  color: #999090;
+}
+
+.custom {
+  width: 12rem;
+}
