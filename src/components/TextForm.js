@@ -28,6 +28,11 @@ const handleCopy = () => {
   selectedText.select();
   navigator.clipboard.writeText(selectedText.value);
 }
+
+const handleExtraSpaces = () => {
+  let newText = text.split(/[ ]+/);
+  setText(newText.join(" "));
+}
   return (
     <>
     <div className="container">
@@ -39,6 +44,7 @@ const handleCopy = () => {
 <button className="btn btn-primary mx-2" onClick = {handleLowClick}>Convert to LowerCase</button>
 <button className="btn btn-primary custom" onClick = {handleClearText}>Clear your Text</button>
 <button className="btn btn-primary custom mx-2" onClick = {handleCopy}>Copy to Clipboard</button>
+<button className="btn btn-primary custom" onClick = {handleExtraSpaces}>Remove Extra Spaces</button>
 </div>
 <div className="container my-3">
   <h2>Your Text Summary</h2>
