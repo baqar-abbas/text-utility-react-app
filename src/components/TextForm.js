@@ -35,7 +35,7 @@ const handleExtraSpaces = () => {
 }
   return (
     <>
-    <div className="container">
+    <div className="container my-3">
     <h1>{props.heading}</h1>
 <div className="mb-3">
   <textarea className="form-control" value={text} placeholder='Enter text here' onChange={handleonChange} id="myBox" rows="8"></textarea>
@@ -51,7 +51,7 @@ const handleExtraSpaces = () => {
   <p>{text.split(" ").length} words, {text.length} characters</p>
   <p>{0.008 * text.split(" ").length} Minutes to read</p>
   <h3>Preview</h3>
-  <p>{text}</p>
+  <p>{text.length>0?text:'Enter something in the Textbox above to Preview here'}</p>
 </div>
 </>
   )

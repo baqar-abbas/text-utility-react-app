@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  background-color: #042743;
+  color: white;
+
 }
 
 .form-control::placeholder {
@@ -12,4 +15,8 @@ body {
 
 .custom {
   width: 12rem;
+}
+
+#flexSwitchCheckDefault:hover {
+  cursor: pointer;
 }
