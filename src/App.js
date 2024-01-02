@@ -52,7 +52,6 @@ function App() {
       <Route exact path="/" element = {<TextForm heading="Enter the Text to Analyze" mode={mode} showAlert={showAlert}/>}/>
       <Route exact path="/about" element = {<About mode={mode}/>}/>    
     </Routes>
-    
     </div>
     </>
   );
