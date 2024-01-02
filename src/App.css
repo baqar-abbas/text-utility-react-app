@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #042743;
+  color: white;
+
+}
+
+.form-control::placeholder {
+  color: #999090;
+}
+
+.custom {
+  width: 12rem;
+}
+
+#flexSwitchCheckDefault:hover {
+  cursor: pointer;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
