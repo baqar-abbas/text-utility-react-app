@@ -3,12 +3,10 @@ import React, {useState} from 'react'
 const TextForm = (props) => {
   const [text, setText] = useState('');
   const handleonChange= (e) => {
-    // console.log("On Change");
     setText(e.target.value);
   }
 
   const handleUpClick = () => {
-    // console.log("Uppercase was clicked" + text);
     let newText = text.toUpperCase();
     setText(newText);
     props.showAlert("Converted to UpperCase", "success");
@@ -54,7 +52,7 @@ const handleExtraSpaces = () => {
 </div>
 <div className="container my-3">
   <h2>Your Text Summary</h2>
-  <p>{text.split(" ").filter((element)=> element.length!==0).length} words, {text.length} characters</p>
+  <p>{text.split(/\s+/).filter((element)=> element.length!==0).length} words, {text.length} characters</p>
   <p>{0.008 * text.split(" ").filter((element)=>element.length!==0).length} Minutes to read</p>
   <h3>Preview</h3>
   <p>{text.length>0?text:'Enter something in the Textbox above to Preview here'}</p>
