@@ -3,7 +3,15 @@
 | Text Utility App |
 |---------------------------------------|
 |![image](/images/textutils.JPG)|
-|![image](/images/logo.webp)|
+
+<div align="center">
+
+  <img src="/images/logo.webp" alt="logo" width="200"  height="auto" />
+  <br/>
+
+  <h3><b>README</b></h3>
+
+</div>
 
 
 <a name="readme-top"></a>
@@ -61,7 +69,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Live Demo Link](Will be available soon)
+- [Live Demo Link](https://text-utility-app-1my1.onrender.com)
 
 <!-- GETTING STARTED -->
 
