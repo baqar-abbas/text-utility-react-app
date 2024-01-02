@@ -20,3 +20,7 @@ body {
 #flexSwitchCheckDefault:hover {
   cursor: pointer;
 }
+
+.accordion-button::after {
+  filter: invert(1);
+}
